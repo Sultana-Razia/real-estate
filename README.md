@@ -1,5 +1,13 @@
 # React + Vite
 
+
+1.React Router
+2.TailwindCSS
+3.DaisyUI
+4.Firebase
+5.
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

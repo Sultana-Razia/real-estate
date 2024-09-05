@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
+import Footer from "../../Shared/Footer/Footer";
 
 
 
@@ -19,7 +20,7 @@ const Register = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="hero bg-base-200 min-h-screen rounded-md">
+            <div className="hero bg-base-200 min-h-screen rounded-md w-[90%] mx-auto mt-6">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Register now!</h1>
@@ -64,6 +65,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

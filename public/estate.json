@@ -1,0 +1,187 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Modern Apartment in Downtown",
+        "segment_name": "Luxury",
+        "description": "A spacious and modern apartment located in the heart of the city. Perfect for urban living.",
+        "price": "$500,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Downtown, New York",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "Kitchen",
+            "gym",
+            "balcony"
+        ],
+        "image": "../src/assets/images/card1.jpg",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "parking": "Underground parking available"
+    },
+    {
+        "id": 2,
+        "estate_title": "Cozy Suburban Home",
+        "segment_name": "Family",
+        "description": "A cozy 4-bedroom home located in a quiet suburban neighborhood, perfect for families.",
+        "price": "$350,000",
+        "status": "sale",
+        "area": "2200 sq ft",
+        "location": "Springfield, Illinois",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "Kitchen",
+            "garden",
+            "garage"
+        ],
+        "image": "../src/assets/images/card2.jpg",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "parking": "2-car garage"
+    },
+    {
+        "id": 3,
+        "estate_title": "Luxury Beachfront Villa",
+        "segment_name": "Luxury",
+        "description": "A stunning beachfront villa with breathtaking ocean views and private access to the beach.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "5000 sq ft",
+        "location": "Malibu, California",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "Kitchen",
+            "private beach",
+            "gym"
+        ],
+        "image": "../src/assets/images/card3.jpg",
+        "bedrooms": 5,
+        "bathrooms": 6,
+        "parking": "Private garage and driveway"
+    },
+    {
+        "id": 4,
+        "estate_title": "Spacious Loft Apartment",
+        "segment_name": "Modern",
+        "description": "A trendy and spacious loft apartment located in a converted warehouse.",
+        "price": "$750,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Brooklyn, New York",
+        "facilities": [
+            "living room",
+            "Kitchen",
+            "shared rooftop",
+            "gym"
+        ],
+        "image": "../src/assets/images/card4.jpg",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parking": "Street parking available"
+    },
+    {
+        "id": 5,
+        "estate_title": "Elegant Country House",
+        "segment_name": "Traditional",
+        "description": "A beautiful country house with large gardens and a serene atmosphere.",
+        "price": "$900,000",
+        "status": "sale",
+        "area": "3500 sq ft",
+        "location": "Charleston, South Carolina",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "Kitchen",
+            "garden",
+            "fireplace"
+        ],
+        "image": "../src/assets/images/card5.jpg",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "parking": "Private driveway"
+    },
+    {
+        "id": 6,
+        "estate_title": "Urban Studio Apartment",
+        "segment_name": "Compact",
+        "description": "A compact studio apartment, ideal for single professionals or students.",
+        "price": "$1,200/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Seattle, Washington",
+        "facilities": [
+            "living room",
+            "Kitchen",
+            "gym",
+            "laundry room"
+        ],
+        "image": "../src/assets/images/card6.jpg",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "parking": "Street parking"
+    },
+    {
+        "id": 7,
+        "estate_title": "Family-Friendly Townhouse",
+        "segment_name": "Family",
+        "description": "A 3-story townhouse in a family-friendly neighborhood, close to schools and parks.",
+        "price": "$2,500/month",
+        "status": "rent",
+        "area": "2000 sq ft",
+        "location": "Austin, Texas",
+        "facilities": [
+            "living room",
+            "Kitchen",
+            "garden",
+            "garage"
+        ],
+        "image": "../src/assets/images/card7.jpeg",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "parking": "1-car garage"
+    },
+    {
+        "id": 8,
+        "estate_title": "Penthouse with Skyline View",
+        "segment_name": "Luxury",
+        "description": "A luxury penthouse with an incredible view of the city skyline and top-notch amenities.",
+        "price": "$5,000,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Chicago, Illinois",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "Kitchen",
+            "private terrace",
+            "gym"
+        ],
+        "image": "../src/assets/images/card8.jpeg",
+        "bedrooms": 4,
+        "bathrooms": 5,
+        "parking": "Private parking garage"
+    },
+    {
+        "id": 9,
+        "estate_title": "Countryside Cabin Retreat",
+        "segment_name": "Rustic",
+        "description": "A charming cabin in the woods, perfect for a weekend getaway or rental investment.",
+        "price": "$300,000",
+        "status": "sale",
+        "area": "1200 sq ft",
+        "location": "Lake Tahoe, Nevada",
+        "facilities": [
+            "living room",
+            "Kitchen",
+            "fireplace",
+            "woodland view"
+        ],
+        "image": "../src/assets/images/card9.jpg",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "parking": "Outdoor parking"
+    }
+]

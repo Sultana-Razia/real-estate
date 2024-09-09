@@ -3,10 +3,11 @@ import { SiEsphome } from "react-icons/si";
 import { MdOutlineBathtub } from "react-icons/md";
 import { FaBed } from "react-icons/fa6";
 import { TbHomeHand } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 const RealEstateCard = ({ estate }) => {
 
-    const { image, estate_title, segment_name, description, price, status, area, location, facilities, bedrooms, bathrooms, parking } = estate;
+    const { id, image, estate_title, segment_name, description, price, status, area, location, facilities, bedrooms, bathrooms, parking } = estate;
 
     return (
         <div className=''>
@@ -24,7 +25,9 @@ const RealEstateCard = ({ estate }) => {
                     <p>{price}</p>
                     <p>{segment_name}</p>
                 </div>
-                <button className='bg-[#7AA93C] text-xl text-white font-semibold py-2 mt-3 w-full rounded-md '>View Property</button>
+                <Link to={`/properties/${id}`}>
+                    <button className='bg-[#7AA93C] text-xl text-white font-semibold py-2 mt-3 w-full rounded-md '>View Property</button>
+                </Link>
             </div>
         </div>
     );

@@ -2,10 +2,14 @@ import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 
 
 const Register = () => {
+
+    const { createUser } = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -20,6 +24,15 @@ const Register = () => {
         console.log(photo);
         console.log(email);
         console.log(password);
+
+        //Create User
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }
 
     // const {

@@ -12,12 +12,12 @@ import { CiLocationOn } from "react-icons/ci";
 const PropertyDetails = () => {
 
     const properties = useLoaderData();
-    console.log(properties);
+    // console.log(properties);
 
     const { id } = useParams();
     const idInt = parseInt(id);
     const property = properties.find(property => property.id === idInt)
-    console.log(property)
+    // console.log(property)
 
 
     return (
@@ -26,7 +26,7 @@ const PropertyDetails = () => {
             {/* id, , , segment_name, , , , , , facilities, , , parking */}
             <div className='bg-[#F3F4F9]'>
                 <div className='w-[80%] mx-auto my-8 grid grid-cols-5 gap-5 lg:gap-14'>
-                    <div className='md:col-span-5 lg:col-span-3'>
+                    <div className='col-span-5 lg:col-span-3'>
                         <div className='flex justify-between'>
                             <h2 className='text-3xl font-bold text-[#BC986B] mb-4'>{property.estate_title}</h2>
                             <p className='text-3xl font-bold text-[#BC986B] mb-4'>{property.segment_name}</p>
@@ -34,7 +34,7 @@ const PropertyDetails = () => {
                         <img className='w-full h-[400px]' src={property.image} alt="" />
                         <p className='mt-4'>{property.description}</p>
                     </div>
-                    <div className='md:col-span-5 lg:col-span-2 mt-12 pl-4 bg-white rounded-md'>
+                    <div className='col-span-5 lg:col-span-2 mt-12 pl-4 bg-white rounded-md'>
                         <div className='flex gap-8 mt-4 text-2xl text-[#BC986B]'>
                             <h2 className='flex items-center gap-1'><IoPricetagOutline /> {property.price}</h2>
                             <h2 className='flex items-center gap-1'><TbHomeHand /> {property.status}</h2>

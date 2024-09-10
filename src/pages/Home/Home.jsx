@@ -8,14 +8,13 @@ import RealEstateCard from "./RealEstateCard";
 const Home = () => {
 
     const realEstate = useLoaderData();
-    console.log(realEstate);
 
     return (
         <div>
             <Navbar></Navbar>
             <Banner></Banner>
-            <h2>Properties</h2>
-            <div className="grid grid-cols-3 gap-10 items-center rounded-sm bg-[#F3F4F9] px-[10%] py-[5%]">
+            <h2 className="text-3xl text-center font-bold text-[#BC986B] my-7">Properties</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center rounded-sm bg-[#F3F4F9] px-[10%] py-[5%]">
                 {
                     realEstate.map(estate => <RealEstateCard
                         key={estate.id}

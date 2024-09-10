@@ -33,7 +33,6 @@ const Banner = () => {
                 <SwiperSlide><img className='w-[100%] rounded-md h-[450px] md:h-[500px] lg:h-[550px]' src={slide2} alt="Slide 2" /></SwiperSlide>
                 <SwiperSlide><img className='w-[100%] rounded-md h-[450px] md:h-[500px] lg:h-[550px]' src={slide3} alt="Slide 3" /></SwiperSlide>
                 <SwiperSlide><img className='w-[100%] rounded-md h-[450px] md:h-[500px] lg:h-[550px]' src={slide4} alt="Slide 4" /></SwiperSlide>
-                ...
             </Swiper>
         </div>
     );

@@ -13,10 +13,10 @@ import footer2 from '../../assets/images/footer2.jpg'
 const Footer = () => {
     return (
         <div>
-            <div className='bg-[#31323C] mt-9 text-white h-[400px] px-[5%] flex items-center justify-center'>
-                <div className='border-r border-[#bc976b24]'>
+            <div className='bg-[#31323C] mt-9 text-white lg:h-[400px] px-[5%] lg:flex items-center justify-center'>
+                <div className='border-r border-[#bc976b24] px-12 lg:px-0'>
                     <div>
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-2 pt-3'>
                             <FaRegSquareFull className='text-xl bg-[#BC986B] text-[#BC986B]' />
                             <h2 className='text-2xl font-semibold'>  Latest Properties</h2>
                         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className='px-12 border-r border-[#bc976b24]'>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-2 pt-3'>
                         <FaRegSquareFull className='text-xl bg-[#BC986B] text-[#BC986B]' />
                         <h2 className='text-2xl font-semibold'>Contact Us</h2>
                     </div>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
 
                 <div className='pl-12'>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-2 pt-3'>
                         <FaRegSquareFull className='text-xl bg-[#BC986B] text-[#BC986B]' />
                         <h2 className='text-2xl font-semibold'>NewsLetter</h2>
                     </div>
@@ -69,7 +69,7 @@ const Footer = () => {
                         <input className='px-4 py-3' type="email" name="email" id="" placeholder='Your Email' />
                         <button className='text-white bg-[#BC986B] px-4 py-3'>SUBSCRIBE</button>
                     </div>
-                    <div className='flex text-[#7a7b84] gap-7 mt-7'>
+                    <div className='flex text-[#7a7b84] gap-7 mt-7 pb-2'>
                         <TiSocialFacebook />
                         <FaTwitter />
                         <FaInstagram />

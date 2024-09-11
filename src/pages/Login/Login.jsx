@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 
 const Login = () => {
 
-    const { signIn, handleGoogleSignIn } = useContext(AuthContext);
+    const { signIn, handleGoogleSignIn, handleGithubSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -66,8 +66,12 @@ const Login = () => {
                             </div>
                         </form>
                         <p className="text-center text-3xl font-semibold">or</p>
-                        <div className="form-control my-6 px-7">
+                        <div className="form-control mt-2 px-7">
                             <button onClick={handleGoogleSignIn} className="btn btn-primary">Continue with Google</button>
+                        </div>
+                        <p className="text-center text-3xl font-semibold">or</p>
+                        <div className="form-control my-2 px-7">
+                            <button onClick={handleGithubSignIn} className="btn btn-primary">Continue with Github</button>
                         </div>
                     </div>
                 </div>

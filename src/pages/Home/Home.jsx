@@ -3,6 +3,7 @@ import Footer from "../../Shared/Footer/Footer";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import RealEstateCard from "./RealEstateCard";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -11,6 +12,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>HomeNest</title>
+            </Helmet>
             <Navbar></Navbar>
             <Banner></Banner>
             <h2 className="text-3xl text-center font-bold text-[#BC986B] my-7">Properties</h2>

@@ -3,6 +3,7 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
 import { AuthContext } from "../../providers/AuthProviders";
 import { useContext } from "react";
+import { Helmet } from "react-helmet";
 
 
 const Login = () => {
@@ -33,6 +34,9 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="hero bg-base-200 min-h-screen rounded-md">
                 <div className="hero-content flex-col lg:flex-row-reverse">

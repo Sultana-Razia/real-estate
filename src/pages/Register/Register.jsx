@@ -4,6 +4,7 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import { Helmet } from "react-helmet";
 
 
 
@@ -47,6 +48,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="hero bg-base-200 min-h-screen rounded-md w-[90%] mx-auto mt-6">
                 <div className="hero-content flex-col lg:flex-row-reverse">

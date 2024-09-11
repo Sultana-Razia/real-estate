@@ -8,6 +8,7 @@ import { SiEsphome } from "react-icons/si";
 import { MdOutlineBathtub } from "react-icons/md";
 import { FaBed } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
+import { Helmet } from "react-helmet";
 
 const PropertyDetails = () => {
 
@@ -22,6 +23,9 @@ const PropertyDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Property Detail</title>
+            </Helmet>
             <Navbar></Navbar>
             {/* id, , , segment_name, , , , , , facilities, , , parking */}
             <div className='bg-[#F3F4F9]'>

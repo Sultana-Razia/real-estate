@@ -2,13 +2,19 @@ import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Footer from "../../Shared/Footer/Footer";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { Helmet } from "react-helmet";
+import { IoMdEyeOff } from "react-icons/io";
+import { IoEye } from "react-icons/io5";
 
 
 
 const Register = () => {
+
+    const [registerError, setRegisterError] = useState('');
+    const [success, setSuccess] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const { createUser } = useContext(AuthContext);
 
@@ -26,13 +32,38 @@ const Register = () => {
         console.log(email);
         console.log(password);
 
+        //reset error
+        setRegisterError('');
+        setSuccess('');
+
+        //Input field validation
+        if (password.length < 8) {
+            setRegisterError('Password should be at least 8 characters or longer');
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setRegisterError('Your password should have at least one upper case');
+            return;
+        }
+        else if (!/[a-z]/.test(password)) {
+            setRegisterError('Your password should have at least one lower case');
+            return;
+        }
+        else if (!/[0-9]/.test(password)) {
+            setRegisterError('Your password should have at least one number');
+            return;
+        }
+        //^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+
         //Create User
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                setSuccess('User Created Successfully')
             })
             .catch(error => {
                 console.error(error);
+                setRegisterError(error.message);
             })
     }
 
@@ -78,11 +109,20 @@ const Register = () => {
                                 </label>
                                 <input type="text" name="photo" placeholder="PhotoURL" className="input input-bordered" required />
                             </div>
-                            <div className="form-control">
+                            <div className="form-control relative">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    name="password" placeholder="Password" className="input input-bordered" required />
+                                <span
+                                    className="absolute top-12 right-3 text-xl"
+                                    onClick={() => setShowPassword(!showPassword)}>
+                                    {
+                                        showPassword ? <IoMdEyeOff /> : <IoEye />
+                                    }
+                                </span>
                                 <label className="label">
                                     <p>Already have an account? please <Link to='/login' className="text-blue-500 font-bold">Login</Link></p>
                                 </label>
@@ -91,6 +131,13 @@ const Register = () => {
                                 <button className="btn btn-primary">Register</button>
                             </div>
                         </form>
+
+                        {
+                            registerError && <p className="text-red-600 text-center pb-4 font-medium">{registerError}</p>
+                        }
+                        {
+                            success && <p className="text-green-600 text-center pb-4 font-medium">{success}</p>
+                        }
                     </div>
                 </div>
             </div>

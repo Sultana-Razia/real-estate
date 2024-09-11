@@ -4,6 +4,8 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import RealEstateCard from "./RealEstateCard";
 import { Helmet } from "react-helmet";
+import Agents from "./Agents";
+import Partners from "./Partners";
 
 
 const Home = () => {
@@ -26,6 +28,8 @@ const Home = () => {
                     ></RealEstateCard>)
                 }
             </div>
+            <Agents></Agents>
+            <Partners></Partners>
             <Footer></Footer>
         </div>
     );
